@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import {Container, Grid, Typography} from "@material-ui/core";
-import RangeSelection from '../components/RangeSelection';
-import WordList from '../components/WordList';
+import React, {useState} from 'react';
+import {Container, Typography} from "@material-ui/core";
+import RangeSelection from '../../components/RangeSelection/RangeSelection';
+import WordList from '../../components/WordList/WordList';
 
 const MainPage = () => {
 
@@ -10,7 +10,7 @@ const MainPage = () => {
 
     return (
         <Container>
-            <Typography variant={'h1'}>
+            <Typography variant={'h2'}>
                 Welcome to the Counting App
             </Typography>
             <RangeSelection setWords={setWords}/>
